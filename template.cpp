@@ -40,7 +40,23 @@ void printVector(vi vect) {
     flp(i, vect.size()) cout << vect[i] << " ";
 }
 
+vi getPrimeNos() {
+    bool isPrime[1300000];
 
+    for (int i = 2; i * i < 1300000; i++) {
+        if (isPrime[i] == false) continue;
+        else {
+            for (int j = i * i; j <= 13000000; j += i) isPrime[j] = false;
+        }        
+    }
+
+    vi Primes;
+    flp(i, 1300000) {
+        if (isPrime[i]) Primes.pb(i);
+    }
+
+    return Primes;
+}
 
 int main() {
     return 0;
