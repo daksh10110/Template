@@ -28,8 +28,6 @@ using namespace std;
          while (t--)
 
 // Miscelleneous;
-// To be added
-
 
 // Some commonly used functions
 void printArr(ll arr[], int n) {
@@ -59,5 +57,17 @@ vi getPrimeNos() {
 }
 
 int main() {
+    // For Fast I/O.
+    ios_base::sync_with_stdio(0); 
+    cin.tie(0);
+
+    // When I need to use files.
+    /*
+    ifstream fin("NameOfInputFile");
+    ofstream fout("NameOfOutputFile");
+    */
+
+   
+
     return 0;
 }
