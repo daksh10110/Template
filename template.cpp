@@ -27,6 +27,21 @@ using namespace std;
          cin >> t;\
          while (t--)
 
+// Miscelleneous;
+// To be added
+
+
+// Some commonly used functions
+void printArr(ll arr[], int n) {
+    flpll(i, n) cout << i << " ";
+}
+
+void printVector(vi vect) {
+    flp(i, vect.size()) cout << vect[i] << " ";
+}
+
+
+
 int main() {
     return 0;
 }
