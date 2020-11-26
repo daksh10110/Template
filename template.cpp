@@ -31,7 +31,7 @@ using namespace std;
 
 // Some commonly used functions
 void printArr(ll arr[], int n) {
-    flpll(i, n) cout << i << " ";
+    flpll(i, n) cout << arr[i] << " ";
 }
 
 void printVector(vi vect) {
@@ -40,6 +40,8 @@ void printVector(vi vect) {
 
 vi getPrimeNos() {
     bool isPrime[1300000];
+
+    flp(i, 1300000) isPrime[i] = true;
 
     for (int i = 2; i * i < 1300000; i++) {
         if (isPrime[i] == false) continue;
@@ -56,6 +58,31 @@ vi getPrimeNos() {
     return Primes;
 }
 
+int getHCF(int a, int b) {
+    if (a == 0) return b;
+    else if (b == 0) return a;
+
+    if (a == b) return a;
+
+    if (a > b) return getHCF(a - b, b);
+
+    return getHCF(a, b - a);
+}
+
+long long ncr(int n, int r) {
+    int diff = max(r, n - r);
+    int foo = min(r, n - r);
+
+    long long prod = 1;
+    for (int i = 0; i < diff - 1; i++) {
+        prod *= n - i;
+    }
+
+    long long fact = 1;
+    for (int i = 1; i <= foo; i++) fact *= i;
+    return prod / fact;
+}
+
 int main() {
     // For Fast I/O.
     ios_base::sync_with_stdio(0); 
@@ -67,7 +94,7 @@ int main() {
     ofstream fout("NameOfOutputFile");
     */
 
-   
+
 
     return 0;
 }
