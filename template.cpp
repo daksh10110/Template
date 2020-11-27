@@ -17,10 +17,21 @@ using namespace std;
 # define vpi vector <pair<int, int> >
 # define vpll vector <pair <ll, ll> >
 
+// Priority Queue stuff
+// Initialize heap
+# define pqi priority_queue<int>
+# define pqll priority_queue<ll>
+
+// Sets(Ordered) stuff
+// Intitialize set
+# define seti set<int, greater<int> >
+# define setll set<ll, greater<ll> >
+
 // Operations
 # define pb push_back
 # define first f
 # define second s
+
 
 // Test input
 # define TEST int t;\
@@ -28,14 +39,25 @@ using namespace std;
          while (t--)
 
 // Miscelleneous;
+# define ITR set<int, greater<int> >:iterator // For iteration in a set. int can be changed
 
 // Some commonly used functions
-void printArr(ll arr[], int n) {
+void printArr(ll arr[], int n) { // Can be changed to int, double, etc According to need
     flpll(i, n) cout << arr[i] << " ";
+    cout << endl;
 }
 
-void printVector(vi vect) {
+void printVector(vi vect) { // Same as printArr
     flp(i, vect.size()) cout << vect[i] << " ";
+    cout << endl;
+}
+
+void printpq(pqi arr) { // Same as printVector
+    while (!arr.empty()) {
+        cout << arr.top() << " ";
+        arr.pop();
+    }
+    cout << endl;
 }
 
 vi getPrimeNos() {
