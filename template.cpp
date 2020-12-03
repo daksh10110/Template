@@ -40,6 +40,8 @@ using namespace std;
 
 // Miscelleneous;
 # define ITR set<int, greater<int> >:iterator // For iteration in a set. int can be changed
+string no = "No";
+string yes = "Yes";
 
 // Some commonly used functions
 void printArr(ll arr[], int n) { // Can be changed to int, double, etc According to need
