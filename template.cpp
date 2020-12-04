@@ -29,8 +29,8 @@ using namespace std;
 
 // Operations
 # define pb push_back
-# define first f
-# define second s
+# define first F
+# define second S
 
 
 // Test input
