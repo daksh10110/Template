@@ -43,6 +43,8 @@ using namespace std;
 string no = "No";
 string yes = "Yes";
 
+# define all(x) x.begin(), x.end()
+
 // Some commonly used functions
 void printArr(ll arr[], int n) { // Can be changed to int, double, etc According to need
     flpll(i, n) cout << arr[i] << " ";
