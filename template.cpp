@@ -3,47 +3,47 @@
 using namespace std;
 
 // Define some commonly used datatypes
-# define ll long long
-# define ld long double
+# define ll             long long
+# define ld             long double
 
 // For loop
-# define flp(i, n) for (int i = 0; i < n; i++)
-# define flpll(i, n) for (ll i = 0; i < n; i++)
+# define flp(i, n)      for (int i = 0; i < n; i++)
+# define flpll(i, n)    for (ll i = 0; i < n; i++)
 
 // Vector stuff
 // Initialize vector
-# define vi vector<int>
-# define vll vector<ll>
-# define vpi vector <pair<int, int> >
-# define vpll vector <pair <ll, ll> >
+# define vi             vector<int>
+# define vll            vector<ll>
+# define vpi            vector <pair<int, int> >
+# define vpll           vector <pair <ll, ll> >
 
 // Priority Queue stuff
 // Initialize heap
-# define pqi priority_queue<int>
-# define pqll priority_queue<ll>
+# define pqi            priority_queue<int>
+# define pqll           priority_queue<ll>
 
 // Sets(Ordered) stuff
 // Intitialize set
-# define seti set<int, greater<int> >
-# define setll set<ll, greater<ll> >
+# define seti           set<int>
+# define setll          set<ll>
 
 // Operations
-# define pb push_back
-# define first F
-# define second S
+# define pb             push_back
+# define F              first
+# define S              second
 
 
 // Test input
-# define TEST int t;\
-         cin >> t;\
-         while (t--)
+# define TEST           int t;\
+                        cin >> t;\
+                        while (t--)
 
 // Miscelleneous;
-# define ITR set<int, greater<int> >:iterator // For iteration in a set. int can be changed
+# define ITR            set<int>:iterator // For iteration in a set. int can be changed
 string no = "No";
 string yes = "Yes";
 
-# define all(x) x.begin(), x.end()
+# define all(x)         x.begin(), x.end()
 
 // Some commonly used functions
 void printArr(ll arr[], int n) { // Can be changed to int, double, etc According to need
@@ -64,7 +64,7 @@ void printpq(pqi arr) { // Same as printVector
     cout << endl;
 }
 
-vi getPrimeNos() {
+vi getPrimeNos() { // Does not work
     bool isPrime[1300000];
 
     flp(i, 1300000) isPrime[i] = true;
