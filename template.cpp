@@ -26,6 +26,7 @@ using namespace std;
 // Intitialize set
 # define seti           set<int>
 # define setll          set<ll>
+# define I              insert
 
 // Operations
 # define pb             push_back
