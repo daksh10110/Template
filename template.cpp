@@ -65,15 +65,15 @@ void printpq(pqi arr) { // Same as printVector
     cout << endl;
 }
 
-vi getPrimeNos() { // Does not work
+vi getPrimeNos() {
     bool isPrime[1300000];
 
-    flp(i, 1300000) isPrime[i] = true;
+    memset(isPrime, true, 1300000);
 
     for (int i = 2; i * i < 1300000; i++) {
         if (isPrime[i] == false) continue;
         else {
-            for (int j = i * i; j <= 13000000; j += i) isPrime[j] = false;
+            for (int j = i * i; j < 13000000; j += i) isPrime[j] = false;
         }        
     }
 
