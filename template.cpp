@@ -4,7 +4,7 @@ using namespace std;
 
 // Define some commonly used datatypes
 # define ll                 long long
-# define ld             long double
+# define ld                 long double
 
 // For loop
 # define flp(i, n)          for (int i = 0; i < n; i++)
